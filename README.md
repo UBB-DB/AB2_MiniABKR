@@ -1,1 +1,5 @@
-"# AB2_MiniABKR" 
+# Mini Adatbázis Kezelő Rendszer
+
+
+
+
