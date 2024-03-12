@@ -27,5 +27,14 @@ felhasznalo[Felhasznalo] --> kliensGUI[1. Kliens odali GUI] & kliensCLI[1. Klien
 ### Fontos
 
 - A szerveren a katalógus állomány(oka)t a szerver indításakor betöltjük, és minden módosítás után frissítjük.
-- mentjük
-- 
+- A kliens reszen a felhasznalo a kliens oldali GUI vagy CLI segitsegevel adja meg a parancsokat, amelyeket a szerveren hajtunk vegre.
+- A kliens csak SQL parancsokat küld a szervernek.
+- A kliens nem tudja elerni a katalogus allomanyokat csak a szerveren keresztul kerheti le az informaciokat.
+
+
+
+### Opcionális funkciók
+- Treeview használata a katalógus állományok megjelenítésére
+- Parancsok kiegészítése
+
+
