@@ -1,4 +1,4 @@
-## Lab 1 feladatai
+# Lab 1 feladatai
 
 A szerver a kovetkezo muveletek elvegzesere kepes:
 
@@ -24,7 +24,7 @@ felhasznalo[Felhasznalo] --> kliensGUI[1. Kliens odali GUI] & kliensCLI[1. Klien
 
 ```
 
-### Fontos
+## Fontos
 
 - A szerveren a katalógus állomány(oka)t a szerver indításakor betöltjük, és minden módosítás után frissítjük.
 - A kliens reszen a felhasznalo a kliens oldali GUI vagy CLI segitsegevel adja meg a parancsokat, amelyeket a szerveren hajtunk vegre.
@@ -33,7 +33,7 @@ felhasznalo[Felhasznalo] --> kliensGUI[1. Kliens odali GUI] & kliensCLI[1. Klien
 
 
 
-### Opcionális funkciók
+## Opcionális funkciók
 - Treeview használata a katalógus állományok megjelenítésére
 - Parancsok kiegészítése
 
