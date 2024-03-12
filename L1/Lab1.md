@@ -16,10 +16,16 @@ A parancsok végrehajtásához
 ```{mermaid}
  
 ---
-title: Implementacio   
+title: Implementacio reszei  
 --- 
 flowchart LR 
 
 felhasznalo[Felhasznalo] --> kliensGUI[1. Kliens odali GUI] & kliensCLI[1. Kliens odali CLI] --SQL parancs --> szerver[2.Szerver] -- Katalogus informacio --> katalogus[3. Katalogus allomany]
 
 ```
+
+### Fontos
+
+- A szerveren a katalógus állomány(oka)t a szerver indításakor betöltjük, és minden módosítás után frissítjük.
+- mentjük
+- 
