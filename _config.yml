@@ -21,8 +21,8 @@ bibtex_bibfiles:
 
 # Information about where the book exists on the web
 repository:
-  url: https://github.com/executablebooks/jupyter-book  # Online location of your book
-  path_to_book: docs  # Optional path to your book, relative to the repository root
+  url: https://github.com/UBB-DB/AB2_MiniABKR  # Online location of your book
+  # path_to_book: docs  # Optional path to your book, relative to the repository root
   branch: master  # Which branch of the repository should be used when creating links (optional)
 
 # Add GitHub buttons to your book
@@ -32,6 +32,6 @@ html:
   use_repository_button: true
 
 #  pip install sphinxcontrib-mermaid
-# sphinx:
-#   extra_extensions:
-#     - sphinxcontrib.mermaid
+sphinx:
+  extra_extensions:
+    - sphinxcontrib.mermaid

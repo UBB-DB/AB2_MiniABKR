@@ -13,3 +13,13 @@ A táblák struktúráját, az elsődleges és külső kulcsos megszorításokat
 A parancsok végrehajtásához
  készítsetek egy grafikus felhasználói felületet, mint például az MSSQL Server Management Studio, vagy egyszerű parancsoros megoldást, mint például a Microsoft SQL server parancssoros felülete (Egy konzol ablakban kipróbálható a `sqlcmd` parancs, a használatához írjuk be a `sqlcmd -?` parancsot).
 
+```{mermaid}
+ 
+---
+title: Implementacio   
+--- 
+flowchart LR 
+
+felhasznalo[Felhasznalo] --> kliensGUI[1. Kliens odali GUI] & kliensCLI[1. Kliens odali CLI] --SQL parancs --> szerver[2.Szerver] -- Katalogus informacio --> katalogus[3. Katalogus allomany]
+
+```
