@@ -1,4 +1,6 @@
-# Mini Adatbázis Kezelő Rendszer
+# Mini ABKR
+
+
 
 
 

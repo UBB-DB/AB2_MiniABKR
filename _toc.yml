@@ -2,8 +2,12 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: intro
+root: README
 chapters:
-- file: markdown
-- file: notebooks
-- file: markdown-notebooks
+- file: L1/Lab1
+- file: L1/Lab1nb
+# - file: notebooks
+# - file: markdown-notebooks
+# sphinx:
+#   extra_extensions:
+#     - sphinxcontrib.mermaid
