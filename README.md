@@ -26,8 +26,25 @@ Az adatbázisokat táblákra osztja, amelyeket a felhasználók létrehozhatnak,
 
 
 
+## Technikai reszletek
+
+### Hogyan jelents be egy hibát a dokumentumban?
+
+Az issue menüpontban jelentsd be a hibát, ahol a következőket lenne jó ha megadnád:
+- A hiba típusa (pl. elírás, hiányzó információ, stb.)
+- A hiba helye (pl. melyik Laborban)
+
+Esetlegesen ha van ötleted a hiba javítására, azt is megadhatod sot pull requestet is nyithatsz.
 
 
+### Hogyan tudok hozzájárulni a dokumentumhoz?
+- Forkold a repositoryt
+- Készíts egy új branchet
+- Commitold a változtatásaidat
+- Nyiss egy pull requestet
 
-
-
+### Hogyan tudom futtatni a dokumentumot lokálisan?
+A JupyterBook lokalis futtatásához a következőket kell tenned:
+- Keszits egy virtuális környezetet, ahol telepited a requirements.txt fájlban található csomagokat
+- A könyvtárban állva futtasd a `jupyter-book build .` parancsot
+- Siker esetén a `_build` mappában találsz egy html fájlt, amit megnyitva megtekintheted a dokumentumot
