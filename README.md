@@ -24,13 +24,23 @@ Az adatbázisokat táblákra osztja, amelyeket a felhasználók létrehozhatnak,
 
 
 
-
-
 ## Technikai reszletek
+
+### Hazik leadasa
+
+- A leadás a GitHub Classroom segítségével történik.
+- A leadás határideje szinkronban van a tárgy honlapján(Canvason) található határidővel, a nem projektezoknek feladott hazi feladatok leadasi hataridejevel.
+- A leadás során a hallgatók a projektet tartalmazó repository commitjait adják le/toltsek fel canvasra(opcionalis, hasznos lehet a commitokat is feltolteni, hogy lassuk a fejlodest)
+
+### Vegso ertekeles
+
+A projekt vegso ertekelese az utolso oktatasi heten tortenik majd, elore egyeztetett idopontban. Az ertekeles soran a hallgatoknak bemutatniuk kell a projektet. Az ertekeles soran a hallgatoknak a projekt funkcionalitasat, az alkamazas minoseget, a hataridok betartasat valamint a bemutato minoseget es kreativitasat is ertekeljuk majd. 
+
 
 ### Hogyan jelents be egy hibát a dokumentumban?
 
 Az issue menüpontban jelentsd be a hibát, ahol a következőket lenne jó ha megadnád:
+
 - A hiba típusa (pl. elírás, hiányzó információ, stb.)
 - A hiba helye (pl. melyik Laborban)
 
