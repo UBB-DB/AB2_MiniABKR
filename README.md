@@ -6,6 +6,7 @@ Az adatbázisokat táblákra osztja, amelyeket a felhasználók létrehozhatnak,
 
 
 ## Funkciók
+
 - Adatbázisok létrehozása, módosítása és törlése
 - Táblák létrehozása, módosítása és törlése
 - Adatok beszúrása, módosítása és törlése
@@ -16,13 +17,12 @@ Az adatbázisokat táblákra osztja, amelyeket a felhasználók létrehozhatnak,
 
 
 ## Opcionális funkciók
+
 - Adatok importálása és exportálása
 - Tobbfelhasználós mód
 - Felhasználók kezelése
 - Jogosultságok kezelése
 - Tranzakciók kezelése
-
-
 
 ## Technikai reszletek
 
@@ -32,10 +32,9 @@ Az adatbázisokat táblákra osztja, amelyeket a felhasználók létrehozhatnak,
 - A leadás határideje szinkronban van a tárgy honlapján(Canvason) található határidővel, a nem projektezoknek feladott hazi feladatok leadasi hataridejevel.
 - A leadás során a hallgatók a projektet tartalmazó repository commitjait adják le/toltsek fel canvasra(opcionalis, hasznos lehet a commitokat is feltolteni, hogy lassuk a fejlodest)
 
-### Vegso ertekeles
+### Végső értékelés 
 
 A projekt vegso ertekelese az utolso oktatasi heten tortenik majd, elore egyeztetett idopontban. Az ertekeles soran a hallgatoknak bemutatniuk kell a projektet. Az ertekeles soran a hallgatoknak a projekt funkcionalitasat, az alkamazas minoseget, a hataridok betartasat valamint a bemutato minoseget es kreativitasat is ertekeljuk majd.
-
 
 ### Hogyan jelents be egy hibát a dokumentumban?
 
@@ -46,15 +45,17 @@ Az issue menüpontban jelentsd be a hibát, ahol a következőket lenne jó ha m
 
 Esetlegesen ha van ötleted a hiba javítására, azt is megadhatod sot pull requestet is nyithatsz.
 
-
 ### Hogyan tudok hozzájárulni a dokumentumhoz?
+
 - Forkold a repositoryt
 - Készíts egy új branchet
 - Commitold a változtatásaidat
 - Nyiss egy pull requestet
 
 ### Hogyan tudom futtatni a dokumentumot lokálisan?
+
 A JupyterBook lokalis futtatásához a következőket kell tenned:
+
 - Keszits egy virtuális környezetet, ahol telepited a requirements.txt fájlban található csomagokat
 - A könyvtárban állva futtasd a `jupyter-book build .` parancsot
 - Siker esetén a `_build` mappában találsz egy html fájlt, amit megnyitva megtekintheted a dokumentumot
