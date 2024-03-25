@@ -1,39 +1,39 @@
 # Lab2 
 
-A második labor feladatai az adatok beszúrását es torleset valositjak meg. Az adatokat a kliens oldali GUI/CLI segitsegevel tudjuk beszurni es torolni. 
+A második labor feladatai az adatok beszúrását és törlését valósítják meg. Az adatokat a kliens oldali GUI/CLI segítségével tudjuk beszúrni és törölni. 
 
-Torolni csak elsodleges kulcs alapjan kell tudni egyenlore.
+Törölni csak elsődleges kulcs alapján kell tudni egyenlőre.
 
 
 ## Szerver oldal
 
-2 szemelyes projekt eseten:
-- egy tablanak egy mongodb collection feleljen meg
-- a tabla elsodleges kulcsa egyedi legyen, es ezt a `_id` (dokuemntum azonosito) mezovel oldjuk meg. Osszetett kulcs eseten az _id mezo a kulcsokbol osszeallitott string legyen.
-- a tablaban egy sor tartalma a dokumentumban 1 ertekkent legyen tarolva, egy mezoben egy osszefuzott stringkent, a mezoket egy bizonyis karakterrel elvalasztva.
+Két személyes projekt esetén:
+- egy táblának egy MongoDB collection feleljen meg;
+- a tábla elsődleges kulcsa egyedi legyen, és ezt az `_id` (dokumentum azonosító) mezővel oldjuk meg. Összetett kulcs esetén az _id mező a kulcsokból összeállított string legyen;
+- a táblában egy sor tartalma a dokumentumban 1 értékként legyen tárolva egy mezőben, összefűzött stringként, a mezőket pedig egy bizonyos karakterrel elválasztva.
 
-Peldaul egy Diak tabla eseten melynek strukturaja (DiakID, Nev, Telefon, Email) lenne, a sorok tartalma a kovetkezokeppen lenne tarolva:
+Például egy Diák tábla esetén, melynek struktúrája (DiákID, Név, Telefon, Email) lenne, a sorok tartalma a következőképpen lenne tárolva:
 ```
 {
     _id: 1,
-    ertek: "Gipsz Jakab;+36301234567;gipszjakab@gmail.com"
+    érték: "Gipsz Jakab;+36301234567;gipszjakab@gmail.com"
 }
 ```
 
-4 szemelyes projekt eseten:
+Négy személyes projekt esetén:
 
-- a sorok tartalmat egy binaris allomanyban taroljuk. A binaris allomanyban a sorokat egymas utan taroljuk. 
-- ebben az esetben dolgozzhattok fix hosszusagu rekordokkal azert, hogy a sorokat egymas utan tudjatok tarolni es konnyen vissza tudjatok olvasni.
+- a sorok tartalmát egy bináris állományban tároljuk, a bináris állományban a sorokat egymás után tároljuk;
+- ebben az esetben dolgozhattok fix hosszúságú rekordokkal annak érdekében, hogy a sorokat egymás után tudjátok tárolni és könnyen vissza tudjátok olvasni.
 
  
 ## Kliens oldal
 
 
-Implementalj egy [vizualis query designer-t](https://www.mssqltips.com/sqlservertip/1086/sql-server-management-studio-query-designer/) az INSERT, DELETE parancsokhoz, vagy hajtsd vegre a parancsokat parancssorbol.
+Implementálj egy [vizuális query designer-t](https://www.mssqltips.com/sqlservertip/1086/sql-server-management-studio-query-designer/) az INSERT, DELETE parancsokhoz, vagy hajtsd végre a parancsokat parancssorból.
 
-CLI eseten a kliens kepes kell legyen az adatbazis objektumok neveit kiegesziteni, azaz ha a felhasznalo elkezdi beirni a tablak nevet, akkor a kliens kiegésziti a tablak nevevel(pl. Tab-lenyomasra.) Ehhez a katalogus allomanyban tarolt tablak neveit es strukturajat kell hasznalni amit a szervertol kerunk le.
+CLI esetén a kliens képes kell legyen az adatbázis objektumok neveit kiegészíteni, azaz ha a felhasználó kezdi beírni a táblák nevét, akkor a kliens kiegészíti a táblák nevével (pl. Tab-lenyomásra.) Ehhez a katalógus állományban tárolt táblak neveit és struktúráját kell használni, amit a szervertől kérunk le.
 
-Szukseges parancsok:
+Szükséges parancsok:
 - INSERT INTO table_name (column1, column2, column3, ...) VALUES (value1, value2, value3, ...);
 - DELETE FROM table_name WHERE condition;
   
