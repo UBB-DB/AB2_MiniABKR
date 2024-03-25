@@ -1,6 +1,6 @@
 # Lab2 
 
-A masodik labor feladatai az adatok beszurasat es torleset valositjak meg. Az adatokat a kliens oldali GUI/CLI segitsegevel tudjuk beszurni es torolni. 
+A masodilk labor feladatai az adatok beszurasat es torleset valositjak meg. Az adatokat a kliens oldali GUI/CLI segitsegevel tudjuk beszurni es torolni. 
 
 Torolni csak elsodleges kulcs alapjan kell tudni egyenlore.
 
@@ -21,14 +21,19 @@ Peldaul egy Diak tabla eseten melynek strukturaja (DiakID, Nev, Telefon, Email) 
 ```
 
 4 szemelyes projekt eseten:
+
 - a sorok tartalmat egy binaris allomanyban taroljuk. A binaris allomanyban a sorokat egymas utan taroljuk. 
-- ebben az esetben dolgozzhattok fix hosszusagu rekordokkal azert hogy a sorokat egymas utan tudjatok tarolni es konnyen vissza tudjatok olvasni.
+- ebben az esetben dolgozzhattok fix hosszusagu rekordokkal azert, hogy a sorokat egymas utan tudjatok tarolni es konnyen vissza tudjatok olvasni.
 
  
 ## Kliens oldal
 
 
-Implementalj egy [vizualis query designer-t](https://www.mssqltips.com/sqlservertip/1086/sql-server-management-studio-query-designer/) az INSERT, DELETE parancsokhoz, vagy hajtsd vegre a parancsokat parancssorbol:
+Implementalj egy [vizualis query designer-t](https://www.mssqltips.com/sqlservertip/1086/sql-server-management-studio-query-designer/) az INSERT, DELETE parancsokhoz, vagy hajtsd vegre a parancsokat parancssorbol.
+
+CLI eseten a kliens kepes kell legyen az adatbazis objektumok neveit kiegesziteni, azaz ha a felhasznalo elkezdi beirni a tablak nevet, akkor a kliens kiegésziti a tablak nevevel(pl. Tab-lenyomasra.) Ehhez a katalogus allomanyban tarolt tablak neveit es strukturajat kell hasznalni amit a szervertol kerunk le.
+
+Szukseges parancsok:
 - INSERT INTO table_name (column1, column2, column3, ...) VALUES (value1, value2, value3, ...);
 - DELETE FROM table_name WHERE condition;
-
+  

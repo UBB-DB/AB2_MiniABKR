@@ -34,7 +34,7 @@ Az adatbázisokat táblákra osztja, amelyeket a felhasználók létrehozhatnak,
 
 ### Vegso ertekeles
 
-A projekt vegso ertekelese az utolso oktatasi heten tortenik majd, elore egyeztetett idopontban. Az ertekeles soran a hallgatoknak bemutatniuk kell a projektet. Az ertekeles soran a hallgatoknak a projekt funkcionalitasat, az alkamazas minoseget, a hataridok betartasat valamint a bemutato minoseget es kreativitasat is ertekeljuk majd. 
+A projekt vegso ertekelese az utolso oktatasi heten tortenik majd, elore egyeztetett idopontban. Az ertekeles soran a hallgatoknak bemutatniuk kell a projektet. Az ertekeles soran a hallgatoknak a projekt funkcionalitasat, az alkamazas minoseget, a hataridok betartasat valamint a bemutato minoseget es kreativitasat is ertekeljuk majd.
 
 
 ### Hogyan jelents be egy hibát a dokumentumban?
