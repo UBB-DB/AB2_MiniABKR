@@ -1,6 +1,6 @@
 # Lab2 
 
-A második labor feladatai az adatok beszurasat es torleset valositjak meg. Az adatokat a kliens oldali GUI/CLI segitsegevel tudjuk beszurni es torolni. 
+A második labor feladatai az adatok beszúrását es torleset valositjak meg. Az adatokat a kliens oldali GUI/CLI segitsegevel tudjuk beszurni es torolni. 
 
 Torolni csak elsodleges kulcs alapjan kell tudni egyenlore.
 
