@@ -13,37 +13,37 @@ Az adatbázisokat táblákra osztja, amelyeket a felhasználók létrehozhatnak,
 - Lekérdezések futtatása
 - Adatok megjelenítése táblázatos formában
 - Query editor
-- Indexek kezelése (létrehozás, törlés) valamint az indexek használata lekérdezésekben
+- Indexek kezelése (létrehozás, törlés), valamint az indexek használata lekérdezésekben
 
 
 ## Opcionális funkciók
 
 - Adatok importálása és exportálása
-- Tobbfelhasználós mód
+- Többfelhasználós mód
 - Felhasználók kezelése
 - Jogosultságok kezelése
 - Tranzakciók kezelése
 
-## Technikai reszletek
+## Technikai részletek
 
-### Hazik leadasa
+### Házik leadása
 
 - A leadás a GitHub Classroom segítségével történik.
-- A leadás határideje szinkronban van a tárgy honlapján(Canvason) található határidővel, a nem projektezoknek feladott hazi feladatok leadasi hataridejevel.
-- A leadás során a hallgatók a projektet tartalmazó repository commitjait adják le/toltsek fel canvasra(opcionalis, hasznos lehet a commitokat is feltolteni, hogy lassuk a fejlodest)
+- A leadás határideje szinkronban van a tárgy honlapján (Canvason) található határidővel, és a nem projektezőknek feladott házi feladatok leadási határidejével.
+- A leadás során a hallgatók a projektet tartalmazó repository commitjait adják le/töltsék fel Canvasra (ez opcionális, hasznos lehet a commitokat is feltölteni, hogy lássuk a fejlődést)
 
 ### Végső értékelés 
 
-A projekt vegso ertekelese az utolso oktatasi heten tortenik majd, elore egyeztetett idopontban. Az ertekeles soran a hallgatoknak bemutatniuk kell a projektet. Az ertekeles soran a hallgatoknak a projekt funkcionalitasat, az alkamazas minoseget, a hataridok betartasat valamint a bemutato minoseget es kreativitasat is ertekeljuk majd.
+A projekt végső értékelése az utolsó oktatási héten történik majd, előre egyeztetett időpontban. Az értékelés során a hallgatóknak be kell mutatniuk a projektet. Az értékelés során a projekt funkcionalitását, az alkalmazás minőségét, a határidők betartását, valamint a bemutató minőségét és kreativitását is figyelembe vesszük.
 
 ### Hogyan jelents be egy hibát a dokumentumban?
 
-Az issue menüpontban jelentsd be a hibát, ahol a következőket lenne jó ha megadnád:
+Az issue menüpontban jelentsd be a hibát, ahol a következőket kellene megadni:
 
 - A hiba típusa (pl. elírás, hiányzó információ, stb.)
 - A hiba helye (pl. melyik Laborban)
 
-Esetlegesen ha van ötleted a hiba javítására, azt is megadhatod sot pull requestet is nyithatsz.
+Esetlegesen ha van ötleted a hiba javítására, azt is megadhatod, sőt, pull request-et is nyithatsz.
 
 ### Hogyan tudok hozzájárulni a dokumentumhoz?
 
@@ -54,8 +54,8 @@ Esetlegesen ha van ötleted a hiba javítására, azt is megadhatod sot pull req
 
 ### Hogyan tudom futtatni a dokumentumot lokálisan?
 
-A JupyterBook lokalis futtatásához a következőket kell tenned:
+A JupyterBook lokális futtatásához a következőket kell tenned:
 
-- Keszits egy virtuális környezetet, ahol telepited a requirements.txt fájlban található csomagokat
+- Készíts egy virtuális környezetet, ahol telepíted a requirements.txt fájlban található csomagokat
 - A könyvtárban állva futtasd a `jupyter-book build .` parancsot
-- Siker esetén a `_build` mappában találsz egy html fájlt, amit megnyitva megtekintheted a dokumentumot
+- Siker esetén a `_build` mappában találsz egy html fájlt, amit ha megnyitsz, megtekintheted a dokumentumot
