@@ -42,6 +42,6 @@ Az adatbázis objektumok katalógus állományból való lekeresere implementalj
 - SHOW TABLES
 
 Pluszpontra:
-- Implementaljatok [TreeView](https://en.wikipedia.org/wiki/Tree_view) 
+- Implementaljatok egy [TreeView](https://en.wikipedia.org/wiki/Tree_view)-t az adatbazis objektumok megjelenitesere
 - `DESCRIBE TABLE tablanev` parancsot (CLI alternatívaként)  [Például](https://www.geeksforgeeks.org/mysql-describe-table/)
   
