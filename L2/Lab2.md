@@ -36,4 +36,12 @@ CLI esetén a kliens képes kell legyen az adatbázis objektumok neveit kiegész
 Szükséges parancsok:
 - INSERT INTO table_name (column1, column2, column3, ...) VALUES (value1, value2, value3, ...);
 - DELETE FROM table_name WHERE condition;
+
+Az adatbázis objektumok katalógus állományból való lekeresere implementaljatok 2 parancsot:
+- SHOW DATABASES
+- SHOW TABLES
+
+Pluszpontra:
+- Implementaljatok [TreeView](https://en.wikipedia.org/wiki/Tree_view) 
+- `DESCRIBE TABLE tablanev` parancsot (CLI alternatívaként)  [Például](https://www.geeksforgeeks.org/mysql-describe-table/)
   
