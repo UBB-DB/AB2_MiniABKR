@@ -29,8 +29,7 @@ Négy személyes projekt esetén:
 ## Kliens oldal
 
 
-Implementálj egy 
-[visual editort] (https://www.techbrothersit.com/2016/01/edit-table-rows-records-in-sql-server.html)
+Implementálj egy [visual editort](https://www.techbrothersit.com/2016/01/edit-table-rows-records-in-sql-server.html)
 az INSERT, DELETE parancsokhoz, vagy hajtsd végre a parancsokat parancssorból.
 
 CLI esetén a kliens képes kell legyen az adatbázis objektumok neveit kiegészíteni, azaz ha a felhasználó kezdi beírni a táblák nevét, akkor a kliens kiegészíti a táblák nevével (pl. Tab-lenyomásra.) Ehhez a katalógus állományban tárolt táblak neveit és struktúráját kell használni, amit a szervertől kérunk le.
