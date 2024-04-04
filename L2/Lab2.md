@@ -8,7 +8,9 @@ Törölni csak elsődleges kulcs alapján kell tudni egyenlőre.
 ## Szerver oldal
 
 Két személyes projekt esetén:
-- egy táblának egy MongoDB collection feleljen meg;
+
+- adatbazisonként egy adatbázisnak egy MongoDB adatbázisnak feleljen meg (opcionális, használhattok 1 adatbázist is, de az adatbázisok tábláit kezeljük adatbázis+tábla azonosító formában)
+- egy táblának egy MongoDB collection feleljen meg
 - a tábla elsődleges kulcsa egyedi legyen, és ezt az `_id` (dokumentum azonosító) mezővel oldjuk meg. Összetett kulcs esetén az _id mező a kulcsokból összeállított string legyen;
 - a táblában egy sor tartalma a dokumentumban 1 értékként legyen tárolva egy mezőben, összefűzött stringként, a mezőket pedig egy bizonyos karakterrel elválasztva.
 
