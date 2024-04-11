@@ -30,3 +30,8 @@ A feladatotok, hogy index fájlokat hozzatok létre egyedi és nem egyedi kulcso
 ## Integritás ellenőrzése
 
 Validáljátok az elsődleges, egyedi és külső kulcsok integritását (beszúrás gyermek táblába, törlés szülő táblából) a megvalósított index fájlok segítségével, lásd KeyvalueSystemsIndex.pdf.
+
+- Ha egy táblába beszúrunk vagy törlünk belőle, akkor az index állományokat kell frissiteni az újonnan hozzáadott adatokkal, vagy törlés esetén kell törölni az index állományokból is, de úgy hogy figyelembe vesszük a kulcsokat. Ha például olyasmit szeretnék törölni, amire van külső kulcsos hivatkozás, akkor jelenitsünk meg hibaüzenetet, és ne engedélyezzük a törlést. 
+- Ha sikeresen lehet törölni, akkor az adatállományok mellett töröljük az index állományokból is. 
+  
+**2 személyes projektek esetén** Az adat és index állományok is MongoDB collection állományokban vannak tárolva, igy a törlés és beszúrás műveleteket a MongoDB beépitett függvényei segitségével könnyen végre tudjuk hajtani.
