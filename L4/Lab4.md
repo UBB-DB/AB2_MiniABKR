@@ -18,6 +18,7 @@ Projekció:
 - Legyen lehetőség a * karakter használatára, amely az összes mezőt jelenti.
 - Adjatok lehetőséget a mezők átnevezésére is (alias).
 - Ha az összes kiválasztott mezőre van index, akkor használjuk ezeket.
+- Distinct kulcsszó használatakor ne jelenjenek meg többször ugyanazok a sorok.
 
 Szűrés(filter):
 
