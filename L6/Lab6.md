@@ -62,7 +62,7 @@ Keszitsetek egy prezentációt, amely tartalmazza a következőket:
 - A csapat/termék nevét
 - Milyen funkciókat implementáltatok
 - Milyen technológiákat használtatok
-- A felhasználói felület bemutatása(Ez lehet demo is)
+- A felhasználói felület  valamint a funkcionalitasok bemutatása (Ez lehet demo is)
 - Mi az ami kimaradt, mi az ami nem működik
 
 Tartalmazhat további információkat is, mint például:
