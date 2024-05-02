@@ -14,6 +14,43 @@ A feladatotok, hogy index fájlokat hozzatok létre egyedi és nem egyedi kulcso
   - egyedi ertékek esetén az indexben az egyedi értékek kerüljenek a kulcsok helyére, és azokhoz tartozó elsődleges kulcsok kerüljenek a rekordok helyére
   - nem egyedi oszlop esetén, az összes megtalálható egyedi(distinct) érték bekerül 1-1 kulcs értékbe, és a value részen össze kell fűzzük az adatfile-ból az összes primary key-t, aminél szerepel ez az érték
   
+Vegyuk az alábbi táblát egyedi mezővel:
+
+| _id | Unique_value |
+|-----|--------------|
+| 1   | a            |
+| 2   | b            |
+| 3   | c            |
+| 4   | d            |
+
+Ekkor az index állományban az alábbiak szerepelnek:
+
+| _id | key |
+|-----|-----|
+| a   | 1   |
+| b   | 2   |
+| c   | 3   |
+| d   | 4   |
+
+Nem egyedi mező esetén:
+
+| _id | Non_unique_value |
+|-----|------------------|
+| 1   | a                |
+| 2   | b                |
+| 3   | a                |
+| 4   | c                |
+
+Ekkor az index állományban az alábbiak szerepelnek:
+
+| _id | key |
+|-----|-----|
+| a   | 1#3 |
+| b   | 2   |
+| c   | 4   |
+
+(Használhattok barmilyen karaktert az eredeti kulcsok összefűzésére, de a kulcsokat ne változtassátok meg)
+
 **4 személyes projektek esetén**
 
 - Az indexeket B+ fa segítségével valósítsátok meg.
