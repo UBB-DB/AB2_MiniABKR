@@ -13,8 +13,8 @@ Használjátok az index állományokat a lekérdezések gyorsítására.
 
 Pluszpontokert implementaljatok a HAVING kulcsszot is.
 
+Pelda lekerdezesek:
 
-Pelda lekerdezesek: 
 ```sql
 
 SELECT cs.CsoportID, COUNT(d.DiakID)
@@ -54,3 +54,22 @@ SELECT AVG(Eletkor)
 FROM Diakok
 
 ```
+
+## Bemutatás
+
+Keszitsetek egy prezentációt, amely tartalmazza a következőket:
+
+- A csapat/termék nevét
+- Milyen funkciókat implementáltatok
+- Milyen technológiákat használtatok
+- A felhasználói felület bemutatása(Ez lehet demo is)
+- Mi az ami kimaradt, mi az ami nem működik
+
+Tartalmazhat további információkat is, mint például:
+
+- Az implementáció nehézségei
+- A kód bemutatása (struktura, fontosabb részek)
+- A tesztek eredményei
+- A továbbfejlesztési lehetőségek
+
+** Megjegyzes:  Keszuljetek arra, hogy a tobbi csapat is ertekelni fogja a munkatokat, es kerdezni fognak a megvalositasrol. **
