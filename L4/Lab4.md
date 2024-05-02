@@ -51,7 +51,8 @@ SELECT Name, EmailAddress FROM customers WHERE EmailAddress = 'test@nomail.com'
 ## Kliens oldal
 
 Implementaljatok egy vizualis feluletet lekerdezesek generalasahoz ([visual query designert](https://www.mssqltips.com/sqlservertip/1086/sql-server-management-studio-query-designer/)) a SELECT parancsokhoz. A feluletnek tartalmaznia kell a kovetkezo elemeket:
-- A tablak kivalasztasa
+
+- A tablak kiválasztása
 - A lekerdezes mezők kiválasztása
 - Tablak kozotti osszekottetesek valamilyen modon torteno megjelenitese (a joinok implementalasa a kovetkezo laborban lesz)
 - A lekerdezes eredmenyeinek megjelenitese
