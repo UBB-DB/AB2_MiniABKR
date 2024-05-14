@@ -9,7 +9,9 @@ A GIT használata során a következő tippeket érdemes figyelembe venni:
 - Ha konfliktus merül fel, ne pánikolj. A GIT segítségével könnyen megoldhatóak a konfliktusok. [Itt](https://www.atlassian.com/git/tutorials/using-branches/merge-conflicts) találsz egy jó leírást a konfliktusok kezeléséről. 
 - Hasznalhatjátok a Rebase-et is, ami segít abban, hogy a commitok rendezettek legyenek. [Itt](https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase) találhatsz egy jó leírást a Rebase használatáról.
 
-## Funkciók
+<!-- ## Funkciók -->
 
+## Pelda script
 
+{Download}`Query sql <./Students.sql>`
 
