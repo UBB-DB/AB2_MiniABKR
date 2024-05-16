@@ -6,13 +6,39 @@ A negyedik labor feladatai a lekérdezések implementálása és az adatbázis t
 
 ### Lekérdezések implementálása
 
-Implementáljátok szerver oldalon a lekérdezéseket. Az eredményeket a kliens oldalra küldjétek vissza. 
+Implementáljátok szerver oldalon a lekérdezéseket. Az eredményeket a kliens oldalra küldjétek vissza.
 
 - A lekérdezések implementálásához használjátok az adatbázis index fájljait a lekérdezések gyorsítására. Az indexek ellenőrzésére használjátok a katológus állományban tárolt információkat.
+  - Ha  tobb index is van  akkor mindet hasznaljatok fel.
+  - Ha a WHERE feltetelben szerepel indexelt es nem indexelt mezo is elobb az indexet hasznaljatok majd a nem indexelt mezo alaplan memoriaban vegerezzetek a szurest.
+  - Ha a lekerdezes projekcioja csak indexelt mezoket tartalmaz, akkor csak az indexeket hasznaljatok(nem szukseges a teljes sorokat lekerdezni).
+
 - Az indexeket intervallum keresésre is kell használni, pl ha egy érték valaminél nagyobb és kisebb, MongoDB-ben van erre lehetőség, range-ekre lehet keresni a find függvény segítségével.
 
 
-Projekció:
+**Lehetseges pluszpont funkcionalitasok:**
+
+Ha van tobb mezobol allo index, akkor azokat hasznaljuk prefix keresesre. Peldaul: 
+
+- Ha van index a GroupID+Mark mezore, akkor azt hasznaljuk abban az esetben ha:
+- Csak a GroupID-t adtak meg: GroupID = 243
+- A GroupID-t es a Mark-ot adtak meg: GroupID = 243 AND Mark = 10
+- A GroupID-t adtak meg es a Mark nagyobb mint 8: GroupID = 243 AND Mark > 8
+
+<!-- ) If there are composite index files, use them on prefix.
+
+There is an index on GroupID+mark it can be used in:
+
+GroupID = 243
+
+It can be used implementing:
+
+GroupID = 243 AND mark = 10
+
+GroupID = 243 AND mark > 8 -->
+
+
+#### Projekció:
 
 - A lekérdezés eredménye csak azokat a mezőket tartalmazza, amelyeket a felhasználó megadott (SELECT mezők).
 - Legyen lehetőség a * karakter használatára, amely az összes mezőt jelenti.
@@ -20,7 +46,7 @@ Projekció:
 - Ha az összes kiválasztott mezőre van index, akkor használjuk ezeket.
 - Distinct kulcsszó használatakor ne jelenjenek meg többször ugyanazok a sorok.
 
-Szűrés(filter):
+#### Szűrés(filter):
 
 - A lekérdezés eredménye csak azokat a sorokat tartalmazza, amelyekre a felhasználó megadott feltétel(ek) igaz(ak) (WHERE feltétel).
 - Egy feltétel egy mezőre vonatkozó összehasonlítás, amely tartalmazza a mező nevét, az összehasonlító operátort és az értéket.
@@ -28,6 +54,7 @@ Szűrés(filter):
 - Szöveges valamint egyéb típusu értékek esetén az = operátort kell támogatni.
 - Szűrési feltételek összekapcsolása **AND** logikai operátorral történik. **OR** operátor nem szükséges.
 - Ha a megadott feltételek közül k mezőre van index, akkor mind a k darab indexet kell használni (a fennmaradó n-k mezőt szekvenciálisan járjuk végig). A felhasznált k darad index alapján megkapunk k halmazt, ezeket metsszük, majd a fennmaradó n-k feltételt alkalmazzuk a metszés eredményére.
+
 
 A lekérdezés eredményében ne jelenjenek meg többször ugyanazok a sorok, ezért a lekérdezés eredményét lehet rendezni, és csak a különböző sorokat megjeleníteni vagy hashing-el megoldani. (Ha a rendezés eredménye nem fér bele a memóriába ki lehet írni háttértárolóra.)
 
